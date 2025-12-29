@@ -40,20 +40,20 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyAU4a8uGe7HCpbp9kronyq0exIU3TlphHQ',
-    appId: '1:1002937750051:android:00341c1e18270311409796',
-    messagingSenderId: '1002937750051',
-    projectId: 'cozyhome-sa',
-    storageBucket: 'cozyhome-sa.firebasestorage.app',
+    apiKey: String.fromEnvironment('FIREBASE_ANDROID_API_KEY'),
+    appId: String.fromEnvironment('FIREBASE_ANDROID_APP_ID'),
+    messagingSenderId: String.fromEnvironment('FIREBASE_MESSAGING_SENDER_ID'),
+    projectId: String.fromEnvironment('FIREBASE_PROJECT_ID'),
+    storageBucket: String.fromEnvironment('FIREBASE_STORAGE_BUCKET'),
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyDAtClO5FpJ9FXMRu0KxFtzdcUKAd9Z5Uw',
-    appId: '1:1002937750051:ios:244dbfbfff380355409796',
-    messagingSenderId: '1002937750051',
-    projectId: 'cozyhome-sa',
-    storageBucket: 'cozyhome-sa.firebasestorage.app',
-    iosBundleId: 'com.cangrow.cozy',
+    apiKey: String.fromEnvironment('FIREBASE_IOS_API_KEY'),
+    appId: String.fromEnvironment('FIREBASE_IOS_APP_ID'),
+    messagingSenderId: String.fromEnvironment('FIREBASE_MESSAGING_SENDER_ID'),
+    projectId: String.fromEnvironment('FIREBASE_PROJECT_ID'),
+    storageBucket: String.fromEnvironment('FIREBASE_STORAGE_BUCKET'),
+    iosBundleId: String.fromEnvironment('FIREBASE_IOS_BUNDLE_ID'),
   );
 
 }
